@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class UsoArrays {
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+		int times = 0;
+
+		String Ntimes = JOptionPane.showInputDialog("Ingrese la cantidad de numeros:");
+		times = Integer.parseInt(Ntimes);
+
+		int [] myArray = new int[times];
+
+		for (int i=0; i<times; i++)
+		{
+			
+			int Num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero en la posicion " + (i+1) + " :"));			
+			myArray[i]=Num;
+			
+		}
+
+		
+		for (int i=0; i<times; i++)
+		{
+			System.out.println(myArray[i]);
+		}
+		
+	}
+
+}
