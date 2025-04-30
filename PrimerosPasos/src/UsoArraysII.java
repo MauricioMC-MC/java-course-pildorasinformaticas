@@ -11,12 +11,16 @@ public class UsoArraysII {
         for (int i = 0; i < countriesQuantity; i++) {
 
             countryName[i] = JOptionPane.showInputDialog("Ingrese el nombre del pais " + (i + 1) + " :");
-            // Assign values to each space in the array.
+            // Ask for country names and store them in the array.
 
         }
 
-        for (String elemento : countryName)
+        for (String elemento : countryName) {
+
             System.out.println(elemento);
+
+        }
+
         // Show the array content for countries.
 
         // -----------------------------------------------------------------------
@@ -32,8 +36,12 @@ public class UsoArraysII {
 
         }
 
-        for (int numList : randNum)
+        for (int numList : randNum) {
+
             System.out.println(numList);
+
+        }
+
         // Show the array content for random numbers.
 
     }
